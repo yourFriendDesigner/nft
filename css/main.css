@@ -174,14 +174,15 @@ a {
   line-height: 30px;
   color: #2A2634;
   text-transform: uppercase;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-radius 0.3s ease;
+  transition: color 0.2s ease, border-radius 0.3s ease;
 }
 .header__btn:hover {
   background: linear-gradient(149.3deg, #F35DED 65.14%, #F3B75D 89.45%);
   color: #fff;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-radius 0.7s ease;
+  transition: color 0.2s ease, border-radius 0.7s ease;
+  border-radius: 20px;
 }
 
 .logo {
@@ -485,14 +486,14 @@ a {
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 24px 44px;
-  -webkit-transition: color 0.2s ease, border-radius 0.3s ease, color 0.3s ease;
-  transition: color 0.2s ease, border-radius 0.3s ease, color 0.3s ease;
+  -webkit-transition: color 0.3s ease, border-radius 0.3s ease;
+  transition: color 0.3s ease, border-radius 0.3s ease;
 }
 .btn:hover {
   background: linear-gradient(149.3deg, #F3B75D 67.79%, #F35DED 89.45%);
   color: #2A2634;
   border-radius: 20px;
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+  -webkit-transition: color 0.2s ease, border-radius 0.7s ease;
+  transition: color 0.2s ease, border-radius 0.7s ease;
 }
 /*# sourceMappingURL=main.css.map */
