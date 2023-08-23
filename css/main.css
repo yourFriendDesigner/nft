@@ -342,8 +342,11 @@ a {
 .hero__content {
   -ms-grid-column-span: 6;
   grid-column: 6 span;
+  margin-top: 100px;
 }
-.hero__img {
+.hero__video {
+  width: 100%;
+  height: 100%;
   -ms-grid-column-span: 6;
   grid-column: 6 span;
 }
@@ -417,8 +420,79 @@ a {
   transition: border-radius 0.7s ease;
 }
 
-.hero__img {
-  width: 100%;
+.win {
+  padding-bottom: 100px;
+}
+.win__box {
+  background-image: url(../img/win-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 26px 20px 26px 56px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #544F61;
+  position: relative;
+}
+.win__img {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
   height: 100%;
+  min-height: 154px;
+}
+.win__title {
+  margin: 0;
+  margin-right: 30px;
+  margin-left: 194px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+}
+.win__descr {
+  margin: 0;
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  max-width: 180px;
+}
+.win__btn {
+  margin-left: auto;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(149.3deg, #F35DED 65.14%, #F3B75D 89.45%);
+  -webkit-box-shadow: inset 0px 4px 33px rgba(255, 255, 255, 0.37);
+  box-shadow: inset 0px 4px 33px rgba(255, 255, 255, 0.37);
+  border-radius: 15px;
+  font-family: var(--second-family);
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 24px 44px;
+  -webkit-transition: color 0.2s ease, border-radius 0.3s ease, color 0.3s ease;
+  transition: color 0.2s ease, border-radius 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(149.3deg, #F3B75D 67.79%, #F35DED 89.45%);
+  color: #2A2634;
+  border-radius: 20px;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 /*# sourceMappingURL=main.css.map */
