@@ -47,16 +47,19 @@
         </svg>
         <span class="cart__count">1</span>
       </div>
-      <button class="header__btn btn-reset">Login</button>
+      <button class="header__btn btn-reset" onclick="showAlert()">Login</button>
     </div>
   </div>
 </header>
+
     <main class="main">
       <section class="hero">
   <div class="hero__container container">
     <div class="hero__content" data-aos="zoom-out">
-      <p class="hero__subtitle">
-        NFT Marketplace
+      <p class="hero__subtitle hero__subtitle--animate">
+        <span>
+          NFT Marketplace
+        </span>
       </p>
       <h1 class="hero__title">
         Discover and Collect Extraordinary Girly NFT from Us
@@ -64,7 +67,7 @@
       <p class="hero__descr">
         Find rare NFT, sell and create your own NFTs with our platform
       </p>
-      <button class="hero__btn btn-reset" data-graph-path="modal">Discover more</button>
+      <button class="hero__btn btn-reset" data-graph-path="modal" onclick="showAlert()">Discover more</button>
     </div>
     <!-- <img class="hero__img" src="img/hero-img.png" srcset="img/hero-img_2x.png 2x" alt="NFT moon" loading="lazy"
       width="583" height="651"> -->
@@ -74,6 +77,7 @@
     </video>
   </div>
 </section>
+
       <section class="win">
   <div class="container">
     <div class="win__box" data-aos="zoom-in-up">
@@ -89,10 +93,143 @@
       <p class="win__descr">
         Register now for getting a chance to win a NFT
       </p>
-      <button class="win__btn btn btn-reset">Register now</button>
+      <button class="win__btn btn btn-reset" onclick="showAlert()">Register now</button>
     </div>
   </div>
 </section>
+
+      <section class="art">
+  <div class="art__container container">
+    <div class="art__top">
+      <div class="art__title-box">
+        <h2 class="art__title title">
+          NEW NFT ARTS
+        </h2>
+        <span class="art__counter">6</span>
+      </div>
+      <a class="art__btn-box" href="#!" onclick="showAlert()">
+        <span>view all</span>
+      </a>
+    </div>
+    <div class="cards">
+      <div class="card__box">
+        <div class="card__top">
+          <video class="card__video" autoplay muted loop width="386" height="381" data-aos="fade-up">
+            <source src="img/nftmoon.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="card__inner-box">
+              <div class="card__left">
+                <h3 class="card__title">
+                  Keasha
+                </h3>
+                <p class="card__text">
+                  A little brave girl was born in Middle Cyber West and always dreamed about making art
+                </p>
+              </div>
+              <div class="card__right">
+                <div class="card__icon">
+                  <div class='FlexWrap'>
+                    <div class='Crystal'>
+                      <div class='Point'></div>
+                      <div class='Center'></div>
+                      <div class='Point'></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="card__price">
+                  2.7
+                  <span>ETH</span>
+                </p>
+              </div>
+            </div>
+            <button class="card__btn btn-reset" onclick="showAlert()">Buy</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="card__box">
+        <div class="card__top">
+          <video class="card__video" autoplay muted loop width="386" height="381" data-aos="fade-up">
+            <source src="img/nftmoon-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="card__inner-box">
+              <div class="card__left">
+                <h3 class="card__title">
+                  Keasha
+                </h3>
+                <p class="card__text">
+                  A little brave girl was born in Middle Cyber West and always dreamed about making art
+                </p>
+              </div>
+              <div class="card__right">
+                <div class="card__icon">
+                  <div class='FlexWrap'>
+                    <div class='Crystal'>
+                      <div class='Point'></div>
+                      <div class='Center'></div>
+                      <div class='Point'></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="card__price">
+                  2.7
+                  <span>ETH</span>
+                </p>
+              </div>
+            </div>
+            <button class="card__btn btn-reset" onclick="showAlert()">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="card__box">
+        <div class="card__top">
+          <video class="card__video" autoplay muted loop width="386" height="381" data-aos="fade-up">
+            <source src="img/nftmoon-3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="card__inner-box">
+              <div class="card__left">
+                <h3 class="card__title">
+                  Keasha
+                </h3>
+                <p class="card__text">
+                  A little brave girl was born in Middle Cyber West and always dreamed about making art
+                </p>
+              </div>
+              <div class="card__right">
+                <div class="card__icon">
+                  <div class='FlexWrap'>
+                    <div class='Crystal'>
+                      <div class='Point'></div>
+                      <div class='Center'></div>
+                      <div class='Point'></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="card__price">
+                  2.7
+                  <span>ETH</span>
+                </p>
+              </div>
+            </div>
+            <button class="card__btn btn-reset" onclick="showAlert()">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
       <!-- <picture>
         <source srcset="img/cover.webp" type="image/webp">
         <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
@@ -104,5 +241,29 @@
 
   </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  function showAlert() {
+    Swal.fire({
+      icon: 'warning',
+      title: 'WRITE ME',
+      customClass: {
+        popup: 'nft-modal',
+      },
+      html:
+        'My telegram: ' +
+        '<a href="https://t.me/vexcelsitas">@vexcelsitas</a> ',
+      color: '#2A2634',
+      background: '#f1f1f1',
+      showCloseButton: true,
+      backdrop: `
+      rgba(0,0,123,0.4)
+      url("/img/cat.gif")
+      left top
+      no-repeat
+    `
+    })
+  }
+</script>
 
 </html>
