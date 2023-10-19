@@ -1,23 +1,245 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 
-@include('partials/head.html')
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>MOoNFT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
 
 <body class="page__body">
   <div id="particles-js"></div>
   <div class="site-container">
-    @include('partials/header.html')
+    <header class="header" data-aos="fade-down">
+  <div class="header__container container">
+    <a class="header__logo logo" href="#!">
+      <img class="logo__moon" src="img/logo-moon.svg" width="31" height="54" alt="Logo">
+      <img class="logo__text" src="img/logo.svg" width="97" height="25" alt="Logo">
+    </a>
+    <nav class="nav" title="Main navigation" data-menu>
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="#!" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#!" class="nav__link">Marketplace</a></li>
+        <li class="nav__item"><a href="#!" class="nav__link">Recource</a></li>
+        <li class="nav__item"><a href="#!" class="nav__link">Stat</a></li>
+        <li class="nav__item"><a href="#!" class="nav__link">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="header__btn-box">
+      <div id="cart" class="cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path class="cart__bell"
+            d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="cart__count">1</span>
+      </div>
+      <button class="header__btn btn-reset" onclick="showAlert()">Login</button>
+    </div>
+  </div>
+</header>
+
     <main class="main">
-      @include('partials/hero.html')
-      @include('partials/win.html')
-      @include('partials/art.html')
+      <section class="hero">
+  <div class="hero__container container">
+    <div class="hero__content" data-aos="zoom-out">
+      <p class="hero__subtitle hero__subtitle--animate">
+        <span>
+          NFT Marketplace
+        </span>
+      </p>
+      <h1 class="hero__title">
+        Discover and Collect Extraordinary Girly NFT from Us
+      </h1>
+      <p class="hero__descr">
+        Find rare NFT, sell and create your own NFTs with our platform
+      </p>
+      <button class="hero__btn btn-reset" data-graph-path="modal" onclick="showAlert()">Discover more</button>
+    </div>
+    <!-- <img class="hero__img" src="img/hero-img.png" srcset="img/hero-img_2x.png 2x" alt="NFT moon" loading="lazy"
+      width="583" height="651"> -->
+    <video class="hero__video" autoplay muted loop width="750" height="750" data-aos="fade-right">
+      <source src="img/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+      <section class="win">
+  <div class="container">
+    <div class="win__box" data-aos="zoom-in-up">
+      <!-- <img class="win__img" src="img/win-img.png" srcset="img/win-img_2x.png 2x" alt="NFT moon" loading="lazy"
+        width="146" height="146"> -->
+      <video class="win__img" autoplay muted loop>
+        <source src="img/win-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2 class="win__title">
+        Win Moara NFT!
+      </h2>
+      <p class="win__descr">
+        Register now for getting a chance to win a NFT
+      </p>
+      <button class="win__btn btn btn-reset" onclick="showAlert()">Register now</button>
+    </div>
+  </div>
+</section>
+
+      <section class="art">
+  <div class="art__container container">
+    <div class="art__top">
+      <div class="art__title-box">
+        <h2 class="art__title title">
+          NEW NFT ARTS
+        </h2>
+        <span class="art__counter">6</span>
+      </div>
+      <a class="art__btn-box" href="#!" onclick="showAlert()">
+        <span>view all</span>
+      </a>
+    </div>
+    <div class="cards">
+      <div class="card__box">
+        <div class="card__top">
+          <video class="card__video" autoplay muted loop width="386" height="381" data-aos="fade-up">
+            <source src="img/nftmoon.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="card__inner-box">
+              <div class="card__left">
+                <h3 class="card__title">
+                  Keasha
+                </h3>
+                <p class="card__text">
+                  A little brave girl was born in Middle Cyber West and always dreamed about making art
+                </p>
+              </div>
+              <div class="card__right">
+                <div class="card__icon">
+                  <div class='FlexWrap'>
+                    <div class='Crystal'>
+                      <div class='Point'></div>
+                      <div class='Center'></div>
+                      <div class='Point'></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="card__price">
+                  2.7
+                  <span>ETH</span>
+                </p>
+              </div>
+            </div>
+            <button class="card__btn btn-reset" onclick="showAlert()">Buy</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="card__box">
+        <div class="card__top">
+          <video class="card__video" autoplay muted loop width="386" height="381" data-aos="fade-up">
+            <source src="img/nftmoon-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="card__inner-box">
+              <div class="card__left">
+                <h3 class="card__title">
+                  Keasha
+                </h3>
+                <p class="card__text">
+                  A little brave girl was born in Middle Cyber West and always dreamed about making art
+                </p>
+              </div>
+              <div class="card__right">
+                <div class="card__icon">
+                  <div class='FlexWrap'>
+                    <div class='Crystal'>
+                      <div class='Point'></div>
+                      <div class='Center'></div>
+                      <div class='Point'></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="card__price">
+                  2.7
+                  <span>ETH</span>
+                </p>
+              </div>
+            </div>
+            <button class="card__btn btn-reset" onclick="showAlert()">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="card__box">
+        <div class="card__top">
+          <video class="card__video" autoplay muted loop width="386" height="381" data-aos="fade-up">
+            <source src="img/nftmoon-3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div class="card__inner-box">
+              <div class="card__left">
+                <h3 class="card__title">
+                  Keasha
+                </h3>
+                <p class="card__text">
+                  A little brave girl was born in Middle Cyber West and always dreamed about making art
+                </p>
+              </div>
+              <div class="card__right">
+                <div class="card__icon">
+                  <div class='FlexWrap'>
+                    <div class='Crystal'>
+                      <div class='Point'></div>
+                      <div class='Center'></div>
+                      <div class='Point'></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="card__price">
+                  2.7
+                  <span>ETH</span>
+                </p>
+              </div>
+            </div>
+            <button class="card__btn btn-reset" onclick="showAlert()">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
       <!-- <picture>
         <source srcset="img/cover.webp" type="image/webp">
         <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
       </picture> -->
     </main>
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример include -->
+    <footer class="footer">
+  <div class="container"></div>
+</footer>
+
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -45,12 +267,10 @@
   }
 </script>
 
-
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 <script>
   particlesJS("particles-js", { "particles": { "number": { "value": 160, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#e455df" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 7 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 1, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0, "sync": false } }, "size": { "value": 4, "random": true, "anim": { "enable": false, "speed": 4, "size_min": 0.3, "sync": false } }, "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 1, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 600 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "repulse" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 250, "size": 0, "duration": 2, "opacity": 0, "speed": 3 }, "repulse": { "distance": 300, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
 </script>
-
 
 </html>
