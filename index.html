@@ -231,10 +231,154 @@
     </div>
 </section>
 
-      <!-- <picture>
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture> -->
+      <section class="collection">
+  <div class="collection__container container">
+    <h2 class="collection__title title">
+      Get popular collections
+    </h2>
+
+    <div class="filters filter-button-group">
+      <ul class="filters__list">
+        <li class="filters__item art__btn-box active" data-filter="*">
+          <span>All</span>
+        </li>
+        <li class="filters__item art__btn-box" data-filter=".game">
+          <span>Game</span>
+        </li>
+        <li class="filters__item art__btn-box" data-filter=".3d">
+          <span>3d abstract</span>
+        </li>
+        <li class="filters__item art__btn-box" data-filter=".virtual">
+          <span>Virtual world</span>
+        </li>
+        <li class="filters__item art__btn-box" data-filter=".music">
+          <span>Music</span>
+        </li>
+        <li class="filters__item art__btn-box" data-filter=".character">
+          <span>Character</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content filters-grid filters__content">
+      <div class="filters-card game grid-item">
+        <div class="filters__box">
+          <a class="filters__link" href="#!" onclick="showAlert()">
+            <div class="filters__top">
+              <h3 class="filters__subtitle">
+                Dramatiqella
+              </h3>
+              <div class="filters__price">
+                $42 900 900
+              </div>
+            </div>
+            <div class="filters__img-box">
+              <img class="filters__img" src="img/collection1.jpg" alt="">
+              <img class="filters__img" src="img/collection2.jpg" alt="">
+              <img class="filters__img" src="img/collection3.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="filters-card 3d grid-item">
+        <div class="filters__box">
+          <a class="filters__link" href="#!" onclick="showAlert()">
+            <div class="filters__top">
+              <h3 class="filters__subtitle">
+                Lollie jam
+              </h3>
+              <div class="filters__price">
+                $14 768 033
+              </div>
+            </div>
+            <div class="filters__img-box">
+              <img class="filters__img" src="img/collection4.jpg" alt="">
+              <img class="filters__img" src="img/collection5.jpg" alt="">
+              <img class="filters__img" src="img/collection6.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="filters-card virtual grid-item">
+        <div class="filters__box">
+          <a class="filters__link" href="#!" onclick="showAlert()">
+            <div class="filters__top">
+              <h3 class="filters__subtitle">
+                Catty kit
+              </h3>
+              <div class="filters__price">
+                $42 900 900
+              </div>
+            </div>
+            <div class="filters__img-box">
+              <img class="filters__img" src="img/collection7.jpg" alt="">
+              <img class="filters__img" src="img/collection8.jpg" alt="">
+              <img class="filters__img" src="img/collection9.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="filters-card music grid-item">
+        <div class="filters__box">
+          <a class="filters__link" href="#!" onclick="showAlert()">
+            <div class="filters__top">
+              <h3 class="filters__subtitle">
+                Poof bam
+              </h3>
+              <div class="filters__price">
+                $25 167 900
+              </div>
+            </div>
+            <div class="filters__img-box">
+              <img class="filters__img" src="img/collection10.jpg" alt="">
+              <img class="filters__img" src="img/collection11.jpg" alt="">
+              <img class="filters__img" src="img/collection12.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="filters-card virtual grid-item">
+        <div class="filters__box">
+          <a class="filters__link" href="#!" onclick="showAlert()">
+            <div class="filters__top">
+              <h3 class="filters__subtitle">
+                &354
+              </h3>
+              <div class="filters__price">
+                $2 008 055
+              </div>
+            </div>
+            <div class="filters__img-box">
+              <img class="filters__img" src="img/collection13.jpg" alt="">
+              <img class="filters__img" src="img/collection14.jpg" alt="">
+              <img class="filters__img" src="img/collection15.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="filters-card character grid-item">
+        <div class="filters__box">
+          <a class="filters__link" href="#!" onclick="showAlert()">
+            <div class="filters__top">
+              <h3 class="filters__subtitle">
+                Robotobot
+              </h3>
+              <div class="filters__price">
+                $7 078 989
+              </div>
+            </div>
+            <div class="filters__img-box">
+              <img class="filters__img" src="img/collection16.jpg" alt="">
+              <img class="filters__img" src="img/collection17.jpg" alt="">
+              <img class="filters__img" src="img/collection18.jpg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
     <footer class="footer">
   <div class="container"></div>
@@ -268,9 +412,35 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 <script>
-  particlesJS("particles-js", { "particles": { "number": { "value": 160, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#e455df" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 7 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 1, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0, "sync": false } }, "size": { "value": 4, "random": true, "anim": { "enable": false, "speed": 4, "size_min": 0.3, "sync": false } }, "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 1, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 600 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "repulse" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 250, "size": 0, "duration": 2, "opacity": 0, "speed": 3 }, "repulse": { "distance": 300, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+  particlesJS("particles-js", { "particles": { "number": { "value": 160, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#8C4985" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 7 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 1, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0, "sync": false } }, "size": { "value": 4, "random": true, "anim": { "enable": false, "speed": 4, "size_min": 0.3, "sync": false } }, "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 1, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 600 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "repulse" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 250, "size": 0, "duration": 2, "opacity": 0, "speed": 3 }, "repulse": { "distance": 300, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
+<script>
+  $('.filters-grid').isotope({
+    itemSelector: '.grid-item',
+  });
+
+  // filter items on button click
+  $('.filter-button-group').on('click', 'li', function () {
+    var filterValue = $(this).attr('data-filter');
+    $('.filters-grid').isotope({ filter: filterValue });
+
+    // Add or Remove css class on the bottom menu
+    $('.filter-button-group li').removeClass('active');
+    $(this).addClass('active');
+  });
+</script>
+
+<script src="https://unpkg.com/vanilla-tilt@latest/dist/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".filters__link"), {
+    glare: true,
+    reverse: true,
+    "max-glare": 0.15
+  });
 </script>
 
 </html>
